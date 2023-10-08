@@ -67,12 +67,16 @@ Initiating Actor: Tenant
 - The mobile device associated with the user cannot access the lock.
 #### Flow of Events for Main Success Scenario:
 -> 1. Landlord selects a user account to retire.  
+
 <- 2. System validates the request and checks if the user account exists.  
-<- 3. System retires the user account and updates the database.  
+
+<- 3. System retires the user account and updates the database.   
+
 <- 4. System confirms the action to the Landlord.  
 
 #### Flow of Events for Extensions (Alternate Scenarios):
 -> 1a. Landlord tries to retire a non-existent user account.  
+
 <- 2a. System returns an error message stating that the user account doesn't exist.  
 
 These schemas should give a comprehensive breakdown of the interactions between the system and the actors for these specific use cases.
