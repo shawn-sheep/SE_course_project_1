@@ -35,15 +35,21 @@ Initiating Actor: Tenant
 #### Flow of Events for Main Success Scenario:
 
 -> 1. Tenant sends unlock command via mobile application.
+
 <- 2. System validates the request by checking the mobile device's authorization in the database.
+
 <- 3. System sends a command to the lock to unlock.
+
 <- 4. System logs the entry in the database and confirms to the Tenant.
 
 #### Flow of Events for Extensions (Alternate Scenarios):
 
 -> 1a. Tenant sends unlock command with an unauthorized device.
+
 <- 2a. System denies access and logs the unauthorized attempt in the database.
+
 -> 1b. Tenant sends multiple unsuccessful unlock attempts.
+
 <- 2b. System blocks the mobile device temporarily and alerts the Tenant.
 
 ### Use Case UC-4: Retire an Existing User Account
